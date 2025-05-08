@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="scroll-progress"></div>
     <header>
         <div class="theme-switch-wrapper">
             <label class="theme-switch" for="checkbox">
@@ -18,12 +19,15 @@
                 </div>
             </label>
         </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
         <div class="profile-container">
             <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
             <h1>Avinash Nandyala</h1>
             <p class="bio">I'm a Software Engineer with expertise in Machine learning, Natural Language Processing, Reinforcement Learning, and robotics. Currently pursuing my Master's in Computer Science at UMass Amherst, I'm passionate about building innovative solutions and tackling complex challenges.</p>
         </div>
-        <nav>
+        <nav class="main-nav">
             <ul>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
@@ -164,28 +168,6 @@
     <footer>
         <p>&copy; 2025 Avinash Nandyala. All rights reserved.</p>
     </footer>
-    <script>
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        const currentTheme = localStorage.getItem('theme');
-
-        if (currentTheme) {
-            document.documentElement.setAttribute('data-theme', currentTheme);
-            if (currentTheme === 'dark') {
-                toggleSwitch.checked = true;
-            }
-        }
-
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-            }    
-        }
-
-        toggleSwitch.addEventListener('change', switchTheme, false);
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html> 

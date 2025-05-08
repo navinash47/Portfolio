@@ -320,14 +320,53 @@ input:checked + .slider:before {
     header {
         width: 100%;
         height: auto;
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        transition: transform 0.3s ease-in-out;
         border-right: none;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    header.header-hidden {
+        transform: translateY(-100%);
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--background-color);
+        padding: 5rem 2rem 2rem;
+        transform: translateX(-100%);
+        z-index: 99;
+    }
+
+    .main-nav.active {
+        transform: translateX(0);
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav a {
+        font-size: 1.2rem;
+        padding: 1rem;
     }
     
     main {
         margin-left: 0;
         padding: 1rem;
+        margin-top: 300px;
     }
     
     .profile-pic {
@@ -346,4 +385,47 @@ input:checked + .slider:before {
     .experience-item, .education-item {
         padding: 1rem;
     }
+
+    .profile-container {
+        margin-top: 3rem;
+    }
+}
+
+/* Add smooth scrolling to the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add a scroll progress indicator */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--secondary-color);
+    z-index: 1001;
+    transition: width 0.1s ease;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.mobile-menu-btn.active {
+    color: var(--secondary-color);
+}
+
+.main-nav {
+    transition: transform 0.3s ease-in-out;
 } 
