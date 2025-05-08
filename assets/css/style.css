@@ -217,6 +217,9 @@ footer {
     color: var(--text-color);
     border-top: 1px solid var(--border-color);
     margin-top: 4rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .skills-grid {
@@ -246,9 +249,10 @@ footer {
 
 /* Theme Switch Styles */
 .theme-switch-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
 }
 
 .theme-switch {
@@ -388,6 +392,22 @@ input:checked + .slider:before {
 
     .profile-container {
         margin-top: 3rem;
+    }
+
+    .theme-switch-wrapper {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1001;
+    }
+
+    .mobile-menu-btn {
+        right: 4rem;
+    }
+
+    footer {
+        margin-top: 2rem;
+        padding: 1rem;
     }
 }
 
