@@ -1,0 +1,289 @@
+%-------------------------
+% Resume in Latex
+% Author : Avinash Nandyala
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-4.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.6in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\small\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\fontsize{8pt}{10pt}\selectfont  % Reduce font size by 1%
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Avinash Nandyala} \\ \vspace{0pt}
+    Amherst, MA ~ \raisebox{-0.1\height}\faPhone\ (413) 466-4833 ~ 
+    \href{mailto:anandyala@umass.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{anandyala@umass.edu}} ~ 
+    \href{https://www.linkedin.com/in/avinash-nandyala-06a88b199/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/avinashn}}  ~
+    \href{https://github.com/navinash47}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/navinash47}}\\
+    \vspace{-9pt}
+\end{center}
+% Machine Learning Researcher for 2 years
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Massachusetts Amherst}{Expected May 2026}
+      {Master of Science, Computer Science}{Amherst, Massachusetts}
+      \resumeItemListStart
+        \resumeItem{Coursework: Machine Learning, Reinforcement Learning, Robotics, Advanced Natural Language Processing}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Indian Institute of Technology, Kharagpur (IIT Kharagpur)}{May 2021}
+      {Bachelor of Technology, Computer Science}{Kharagpur, India}
+      \resumeItemListStart
+        \resumeItem{Coursework: Machine Learning, Deep Learning, Natural Language Processing, Image Processing, Database Management Systems, Computer Networks, Operating Systems, Theory of Computation, Formal Language and Automata Theory}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Mastercard}{July 2021 -- July 2024}
+      {Software Engineer}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Enhanced the Enhanced Currency Conversion (ECC) platform by developing scalable ASP.NET web pages and REST APIs, resulting in 35\% faster transaction processing and 25\% improvement in customer satisfaction scores.}
+        \resumeItem{Optimized web-cookie handling across key administration portals, reducing session timeouts by 40\% and improving security compliance by implementing robust encryption, leading to 0 security incidents.}
+        \resumeItem{Implemented PCI Key Block mandate compliance for sensitive payment fields (CAVV, HMAC), achieving 100\% compliance with industry standards and reducing encryption-related issues by 90\%.}
+        \resumeItem{Mentored 5 incoming interns in developing an Automated Environmental Stability Reporting tool, increasing system monitoring efficiency by 60\% and reducing manual reporting time by 75\%.}
+        \resumeItem{Led successful migration of 15+ gateway services from Oracle Java 8 to Zulu 17, reducing system vulnerabilities by 80\% and improving performance by 30\%. Resolved 50+ build issues and eliminated 95\% of critical security vulnerabilities in tokenization microservices.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Mastercard}{August 2020 -- April 2021}
+      {Software Engineer Intern}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Developed a simulation of an end-to-end Point of Sale (POS) machine for contactless card payments using C and Arduino WIFI Module, achieving a 30\% increase in transaction speed and a 20\% reduction in hardware costs.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------PROJECTS-----------
+\section{RELEVANT PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{BioNLP Model Alignment using DeepSeek-RL} $|$ \emph{BioNLP Lab} $|$ \emph{LLMs, Transfer Learning, Unsloth AI}}{}
+          \resumeItemListStart
+            \resumeItem{Aligned large language models (Qwen, LLaMA) using DeepSeek-RL for biomedical NLP tasks.}
+            \resumeItem{Evaluated performance on the MIMIC-EXT-IV clinical dataset and Rare dataset to benchmark accuracy across aligned models, achieving 85\% accuracy with Reinforcement Learning from Human Feedback (RHLF) and 60\% accuracy with Fine Tuning.}
+            \resumeItem{Focused on improving domain-specific understanding and clinical coherence in model outputs.}
+          \resumeItemListEnd
+          \vspace{-10pt}
+    \resumeProjectHeading
+          {\textbf{Hierarchical Context Aggregation for Quality Automated Medical Notes} $|$ \emph{LLMs Transfer Learning}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented spoken language normalization using hybrid rule-based and neural approaches, achieving 90\% accuracy in medical terminology grounding.}
+            \resumeItem{Developed key-phrase extraction and topic categorization algorithms using hierarchical clustering, enabling structured SOAP note generation from doctor-patient conversations.}
+          \resumeItemListEnd
+          \vspace{-10pt}
+    \resumeProjectHeading
+          {\textbf{Patrol Bot – Autonomous Security Robot} $|$ \emph{ROS, OpenCV, Computer Vision}}{}
+          \resumeItemListStart
+            \resumeItem{Developed an autonomous Patrol Bot on the Triton platform, integrating OpenCV-based vision for person detection, obstacle avoidance, and dynamic path planning for security patrol tasks.}
+            \resumeItem{Designed and implemented a color-coded feedback system (red for person detection, yellow for static obstacles) and conducted real-world testing across varying object sizes and movement patterns.}
+          \resumeItemListEnd
+          \vspace{-10pt}
+    \resumeProjectHeading
+          {\textbf{Advanced Robot Navigation and Localization} $|$ \emph{ROS, C++, Gazebo, Q-Learning, SARSA}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a particle filter algorithm for robot localization in indoor environments, achieving 0.5m position accuracy and 0.2 rad orientation accuracy within 50 iterations, while reducing computational complexity by 10\% with an efficient likelihood field-based sensor model and motion model using Gaussian noise parameters.}
+            \resumeItem{Implemented and compared Q-learning and SARSA algorithms for autonomous robot wall-following, achieving 6000+ J-value rewards and successful navigation across 5 diverse scenarios, with a 100\% success rate in handling complex scenarios like L-shape corners and 180-degree turns through sophisticated state-action spaces and reward mechanisms.}
+          \resumeItemListEnd
+          \vspace{-10pt}
+    \resumeProjectHeading
+          {\textbf{MCTS, REINFORCE, and Actor-Critic on Four Mini-Games} $|$ \emph{Reinforcement Learning}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented and evaluated these algorithms in 687-GridWorld, Acrobot, Cat vs Monsters, and Cliff Walking.}
+            \resumeItem{Optimized neural networks and hyperparameters for effective policy learning and navigation.}
+          \resumeItemListEnd
+          \vspace{-10pt}
+    \resumeProjectHeading
+          {\textbf{Legal Judgment Classification} $|$ \emph{TensorFlow, FastAPI, NLP}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a BiLSTM-BERT model to classify legal judgments using datasets from the Supreme Courts of India and the UK.}
+            \resumeItem{Achieved an average F1-score of 0.6898 on the Indian dataset and 0.5542 on the UK dataset.}
+          \resumeItemListEnd
+          \vspace{-10pt}
+    \resumeProjectHeading
+          {\textbf{Hospital Recommender Ambulatory System} $|$ \emph{Android Studio, Java, Python, Selenium, Google Maps API}}{}
+          \resumeItemListStart
+            \resumeItem{Built an Android app to calculate patient Critical Index (CI) using linear regression and recommend hospitals within 5 km, scraping data from Google Maps API with Python Selenium.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+% generic skills
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt]
+    \footnotesize{\item{
+     \textbf{Languages}{: Python, C/C++, Java, C\#, HTML, CSS, JavaScript, SQL, Shell Scripting} \\
+     \textbf{Developer Tools}{: Unsloth AI, PEFT, Qwen, LLaMA, Git, Maven, Gradle, Jenkins (CI/CD), IntelliJ, Android Studio, JMeter, Splunk} \\
+     \textbf{Frameworks}{: ROS, PyTorch, Selenium, ASP.NET, Spring Boot, Node.js} \\
+     \textbf{Databases}{: MySQL, PostgreSQL, MongoDB, Redis} \\
+     \textbf{Cloud}{: AWS Cloud, Docker, Kubernetes} \\
+    }}
+ \end{itemize}
+
+% specific skills - NLP
+%  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt]
+%     \footnotesize{\item{
+%      \textbf{Languages}{: Python, C/C++, Java, C\#, HTML, CSS, JavaScript, SQL, Shell Scripting} \\
+%     %  \textbf{Vision \& Image Processing}{: OpenCV, TensorFlow, PyTorch, Keras, Image Segmentation, Object Detection, Depth Estimation, 3D Reconstruction, Visual Grounding} \\
+%      \textbf{NLP}{: LLM, TensorFlow, PyTorch, Machine Learning, Reinforcement Learning, BioNLP} \\
+%      \textbf{Misc}{: Git, Jenkins, CI/CD pipelines, AWS, Wireshark, LangChain, Unsloth AI, PEFT, Qwen, LLaMA, Maven, Gradle, IntelliJ, Android Studio, JMeter, Splunk} \\
+%     }}
+%  \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{BR Ambedkar Hall Of Residence}{January 2019 -- June 2019}{General Secretary in Technology}{IIT Kharagpur}
+%             \resumeItemListStart
+%                 \resumeItem{Conducted Various Technology showcase competitions in Robotics called Robosoccer.}
+%                 \resumeItem{Managed Smart Surveillance system for catching students who do indisciplinary actions in hall premises.}
+%             \resumeItemListEnd
+%         \resumeSubheading{Inter Hall of Residence - Sports Club}{January 2019 -- Febrauary 2020}
+%         {Table Tennis Player}{IIT Kharagpur}
+%         \resumeItemListStart
+%             \resumeItem{Qualified Inter Hall Table Tennis (doubles) }
+%         \resumeItemListEnd
+%         \resumeSubheading{National Service Scheme}{August 2017 -- April 2018}{Volunteer for NSS}{IIT Kharagpur}
+%             \resumeItemListStart
+%                 \resumeItem{Built metal Roads and mini wells in a village near Kharagpur}
+%                 \resumeItem{Volunteered for tree Plantation in 2 acres barren land near Purulia village.}
+%                 \resumeItem{Taught basic English lessons for underprivileged children.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+\section{ACHIEVEMENTS \& EXTRACURRICULARS}
+    \begin{itemize}
+        \setlength\itemsep{-0.5em}
+        \item Awarded MVP (Most Valuable Player) at Mastercard in 2024 for most exceptional performance and contributions within team
+        \item Secured All India Rank of 900 among 1.4 million applicants in Joint Entrance Examination - Advanced
+        \item Volunteer, NSS – Community service: road construction, tree plantation, teaching English.
+    \end{itemize}
+\end{document}
