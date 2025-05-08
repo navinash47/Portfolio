@@ -327,10 +327,13 @@ input:checked + .slider:before {
         top: 0;
         left: 0;
         z-index: 100;
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         border-right: none;
         border-bottom: 1px solid var(--border-color);
         transform: translateY(0);
+        will-change: transform;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
     }
 
     header.header-hidden {
@@ -376,6 +379,7 @@ input:checked + .slider:before {
         padding: 1rem;
         margin-top: 300px;
         flex: 1;
+        transition: margin-top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .profile-pic {
