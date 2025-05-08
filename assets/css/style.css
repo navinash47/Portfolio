@@ -29,6 +29,7 @@ body {
     color: var(--text-color);
     background-color: var(--background-color);
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -217,8 +218,6 @@ footer {
     color: var(--text-color);
     border-top: 1px solid var(--border-color);
     margin-top: 4rem;
-    position: relative;
-    bottom: 0;
     width: 100%;
 }
 
@@ -371,6 +370,7 @@ input:checked + .slider:before {
         margin-left: 0;
         padding: 1rem;
         margin-top: 300px;
+        flex: 1;
     }
     
     .profile-pic {
@@ -408,6 +408,7 @@ input:checked + .slider:before {
     footer {
         margin-top: 2rem;
         padding: 1rem;
+        width: 100%;
     }
 }
 
