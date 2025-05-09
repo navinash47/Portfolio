@@ -458,4 +458,15 @@ html {
 
 .main-nav {
     transition: transform 0.3s ease-in-out;
+}
+
+.institution-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.institution-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
 } 
