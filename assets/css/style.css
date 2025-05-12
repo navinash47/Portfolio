@@ -514,20 +514,6 @@ html {
     margin-top: 1rem;
 }
 
-.blog-links .read-more {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: var(--accent-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.blog-links .read-more:hover {
-    background: var(--accent-hover);
-}
-
 @media (max-width: 768px) {
     .blog-grid {
         grid-template-columns: 1fr;
