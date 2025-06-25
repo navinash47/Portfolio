@@ -419,6 +419,22 @@ input:checked + .slider:before {
         padding: 1rem;
         width: 100%;
     }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .papers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .paper-card {
+        padding: 1rem;
+    }
+    
+    .paper-card h3 {
+        font-size: 1.2rem;
+    }
 }
 
 /* Add smooth scrolling to the whole page */
@@ -512,6 +528,96 @@ html {
 
 .blog-links {
     margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.blog-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.blog-links a:hover {
+    color: var(--primary-color);
+}
+
+.papers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.paper-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.paper-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.paper-card h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.paper-authors {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.paper-venue {
+    color: var(--text-color);
+    font-style: italic;
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+.paper-date {
+    color: var(--text-color);
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.paper-abstract {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.paper-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.paper-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.paper-link:hover {
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 @media (max-width: 768px) {
