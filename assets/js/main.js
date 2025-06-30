@@ -62,6 +62,9 @@ let lastScroll = 0;
 function handleScroll() {
     const currentScroll = window.pageYOffset;
     
+    console.log('currentScroll', currentScroll);
+    console.log('lastScroll', lastScroll);
+    
     // Hide/show header based on scroll direction
     if (currentScroll > lastScroll && currentScroll > 100) {
         header.classList.add('header-hidden');
@@ -74,6 +77,9 @@ function handleScroll() {
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrolled = (winScroll / height) * 100;
     scrollProgress.style.width = scrolled + "%";
+    console.log('scrolled', scrolled);
+    console.log('winScroll', winScroll);
+    console.log('height', height);
     
     lastScroll = currentScroll;
 }
