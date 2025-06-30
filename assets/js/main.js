@@ -66,7 +66,7 @@ function handleScroll() {
     console.log('lastScroll', lastScroll);
     
     // Hide/show header based on scroll direction
-    if (currentScroll > 100) {
+    if (currentScroll > 50) {
         header.classList.add('header-hidden');
     } else {
         header.classList.remove('header-hidden');
