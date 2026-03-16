@@ -1,0 +1,19 @@
+# OS and editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Dependencies (if any)
+node_modules/
+
+# LaTeX build artifacts (optional – remove if you want to track built resume)
+# resume.aux
+# resume.log
+# resume.out
+# resume.fls
+# resume.fdb_latexmk
+# resume.synctex.gz
+
+# .github/ is NOT ignored – workflows must be committed for GitHub Actions
