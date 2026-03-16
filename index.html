@@ -53,6 +53,7 @@
                 <p class="company"><a href="https://hcr.cs.umass.edu/index.html" target="_blank" class="institution-link">Human-Centric Robotics Lab, UMass Amherst</a></p>
                 <p class="date">May 2025 - Present</p>
                 <ul>
+                    <li>Investigating continual learning for quadruped locomotion using Kolmogorov–Arnold Networks (KANs) with B-spline edge representations to add new tasks via localized updates and avoid global interference of MLP policies.</li>
                     <li>Developing BeamDojo Extension for beam walking task implementation using reinforcement learning algorithms for humanoid locomotion on sparse footholds.</li>
                     <li>Implementing fault-tolerant quadrupedal locomotion with flow matching algorithms, integrating DreamFLEX's fault-aware control with trajectory optimization.</li>
                     <li>Working on Visual Whole-Body Control (VBC) porting from Isaac Gym to Genesis simulation environment for loco-manipulation frameworks.</li>
@@ -110,6 +111,13 @@
         <section id="projects">
             <h2>Projects</h2>
             <div class="project-grid">
+                <div class="project-card">
+                    <h3>Continual Learning for Quadruped Locomotion (KANs)</h3>
+                    <p>Investigating continual learning for quadruped locomotion using Kolmogorov–Arnold Networks (KANs) with B-spline edge representations. The framework enables adding new tasks via localized updates while avoiding global interference typical of MLP policies. Built on LeggedGym-Ex for training in Genesis, IsaacGym, and IsaacSim.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/oscar-youngquist/HCR_Genesis_LR_CL" target="_blank">GitHub</a>
+                    </div>
+                </div>
                 <div class="project-card">
                     <h3>BeamDojo Extension: Beam Walking Task Implementation</h3>
                     <p>Extension work on BeamDojo framework specifically focused on beam walking tasks. Developing and implementing reinforcement learning algorithms for humanoid locomotion on narrow beams, building upon the original BeamDojo framework's approach to sparse foothold navigation. Working on optimizing policy learning and foot placement strategies for challenging beam walking scenarios.</p>
@@ -188,6 +196,16 @@
         <section id="papers">
             <h2>Papers I am Interested</h2>
             <div class="papers-grid">
+                <div class="paper-card">
+                    <h3>KAN: Kolmogorov-Arnold Networks</h3>
+                    <p class="paper-authors">Ziming Liu, Yixuan Wang, Sachin Vaidya, Fabian Ruehle, James Halverson, Marin Soljačić, Thomas Y. Hou, Max Tegmark</p>
+                    <p class="paper-venue">MIT, Princeton</p>
+                    <p class="paper-date">2025</p>
+                    <p class="paper-abstract">Kolmogorov–Arnold Networks replace fixed activation functions with learnable univariate functions on edges, improving interpretability and accuracy. Relevant to continual learning for locomotion policies via localized B-spline representations.</p>
+                    <div class="paper-links">
+                        <a href="https://arxiv.org/abs/2404.19756" target="_blank" class="paper-link">ArXiv</a>
+                    </div>
+                </div>
                 <div class="paper-card">
                     <h3>Visual Whole-Body Control for Legged Loco-Manipulation</h3>
                     <p class="paper-authors">Minghuan Liu, Zixuan Chen, Xuxin Cheng, Yandong Ji, Rizhao Qiu, Ruihan Yang, Xiaolong Wang</p>
