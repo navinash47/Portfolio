@@ -1,0 +1,291 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{bookmark}
+\usepackage{fancyhdr}
+\setlength{\footskip}{12pt}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[noitemsep, topsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  {\Huge\textsc{Avinash Nandyala}} \\ \vspace{1pt}
+  \small +1 (413) 466-4833 $|$ \href{mailto:anandyala@umass.edu}{\underline{anandyala@umass.edu}} $|$
+  \href{https://www.linkedin.com/in/avinash-nandyala-06a88b199/}{\underline{LinkedIn}} $|$
+  \href{https://github.com/navinash47}{\underline{Github}} $|$
+  \href{https://navinash47.github.io/Portfolio/}{\underline{Portfolio}}
+\end{center}
+
+%-----------SUMMARY-----------
+\begin{center}
+  \small{MS CS candidate at UMass Amherst with active research in robot learning, locomotion control, and sim-to-real transfer. Experienced in reinforcement learning for quadruped and humanoid systems, physics-based simulation (Isaac Gym, Genesis, MuJoCo), and continual learning. 3 years of industry experience at Mastercard building production-grade software systems.}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Massachusetts Amherst}{Amherst, MA}
+    {Master of Science in Computer Science}{Expected May 2026}
+  \resumeSubheading
+    {Indian Institute of Technology (IIT) Kharagpur}{Kharagpur, India}
+    {Bachelor of Technology in Computer Science and Engineering}{May 2021}
+\resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages}{: Python, C, C++, Java, SQL} \\
+    \textbf{Frameworks / Libraries}{: PyTorch, TensorFlow, OpenCV, NumPy, CUDA, HuggingFace} \\
+    \textbf{Tools / Platforms}{: ROS, Isaac Gym, Isaac Sim, Genesis, MuJoCo, Linux, Docker, Git, Jupyter, Weights \& Biases (W\&B)} \\
+    \textbf{Certifications}{: DeepLearning.AI: ML Specialization, DL Specialization, NLP Specialization}
+  }}
+\end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Graduate Research Assistant, Human-Centric Robotics Lab}{May 2025 -- Present}
+    {University of Massachusetts Amherst}{Amherst, MA}
+    \resumeItemListStart
+      \resumeItem{Developing a continual learning framework for quadruped locomotion using Kolmogorov--Arnold Networks (KANs) with B-spline edge representations, enabling localized task updates that prevent global interference in MLP policies.}
+      \resumeItem{Implemented BeamDojo extensions for humanoid locomotion, developing reinforcement learning algorithms for balance and control on sparse footholds.}
+      \resumeItem{Ported the Visual Whole-Body Control framework from Isaac Gym to Genesis, unlocking advanced loco-manipulation and physics-based motion planning in a more efficient differentiable simulation environment.}
+    \resumeItemListEnd
+
+  % \resumeSubheading
+  %   {Graduate Research Assistant, Biomedical NLP Lab}{Feb. 2025 -- May 2025}
+  %   {University of Massachusetts Amherst}{Amherst, MA}
+  %   \resumeItemListStart
+  %     \resumeItem{Fine-tuned large language models (Qwen, LLaMA) using DeepSeek-RL and reinforcement learning with human feedback (RLHF) for biomedical text understanding, achieving 85\% accuracy on clinical datasets.}
+  %     \resumeItem{Benchmarked model performance across MIMIC-EXT-IV and RARE datasets to evaluate robustness and domain generalization in biomedical NLP.}
+  %     \resumeItem{Enhanced model interpretability and domain-specific reasoning through reinforcement alignment and reward optimization techniques.}
+  %   \resumeItemListEnd
+
+  % \resumeSubheading
+  %   {Graduate Research Assistant}{Feb. 2025 -- Present}
+  %   {University of Massachusetts Amherst}{Amherst, MA}
+  %   \resumeItemListStart
+  %     \resumeItem{Developing a continual learning framework for quadruped locomotion using Kolmogorov--Arnold Networks (KANs) with B-spline edge representations, enabling localized task updates that prevent global interference in MLP policies.}
+  %     \resumeItem{Implemented BeamDojo extensions for humanoid locomotion, developing reinforcement learning algorithms for balance and control on sparse footholds.}
+  %     \resumeItem{Ported the Visual Whole-Body Control framework from Isaac Gym to Genesis, unlocking advanced loco-manipulation and physics-based motion planning in a more efficient differentiable simulation environment.}
+  %     \resumeItem{Fine-tuned large language models (Qwen, LLaMA) using DeepSeek-RL and RLHF for biomedical text understanding, achieving 85\% accuracy on clinical datasets; benchmarked across MIMIC-EXT-IV and RARE datasets for domain generalization.}
+  %     \resumeItem{Enhanced model interpretability and domain-specific reasoning through reinforcement alignment and reward optimization techniques.}
+  %   \resumeItemListEnd
+
+  \resumeSubheading
+    {Software Engineer}{Jul. 2021 -- Jul. 2024}
+    {Mastercard}{Pune, India}
+    \resumeItemListStart
+      \resumeItem{Developed secure REST APIs and backend services for the Enhanced Currency Conversion (ECC) system, processing high-volume international transactions at scale.}
+      \resumeItem{Engineered compliance-ready features for PCI key block mandates (CAVV, HMAC), strengthening cryptographic integrity and data protection.}
+      \resumeItem{Led modernization of gateway services from Java 8 to Zulu 17, resolving build pipeline issues on Jenkins and mitigating production vulnerabilities in tokenization microservices.}
+      \resumeItem{Mentored interns on automated environmental stability reports, reducing manual monitoring overhead by 25\% through automated alerting and report generation.}
+    \resumeItemListEnd
+
+  % \resumeSubheading
+  %   {Undergraduate Research Assistant, NLP Lab}{Mar. 2021 -- Jun. 2021}
+  %   {IIT Kharagpur}{Kharagpur, India}
+  %   \resumeItemListStart
+  %     \resumeItem{Developed legal judgment classification systems using BiLSTM-BERT hybrid models, automating case categorization from Indian and UK Supreme Court datasets.}
+  %     \resumeItem{Improved legal text comprehension accuracy with domain-adaptive fine-tuning, achieving F1-scores of 0.69 (India) and 0.55 (UK), surpassing vanilla BERT fine-tuning baselines on both datasets.}
+  %   \resumeItemListEnd
+
+  % \resumeSubheading
+  %   {Undergraduate Research Assistant, SWAN Laboratory}{Jun. 2020 -- Jan. 2021}
+  %   {IIT Kharagpur}{Kharagpur, India}
+  %   \resumeItemListStart
+  %     \resumeItem{Designed an IoT-enabled healthcare prediction system integrating dense neural networks to compute patient criticality scores, improving emergency triage accuracy by 40\%.}
+  %     \resumeItem{Built a hospital recommender engine using KNN and cosine similarity, deployed on Google Cloud, providing real-time facility recommendations within a 5km radius.}
+  %     \resumeItem{Automated real-time hospital data updates via Google Maps API and web scraping, ensuring hourly synchronization and high data reliability.}
+  %   \resumeItemListEnd
+
+  % \resumeSubheading
+  %   {Software Engineer Intern}{May 2020 -- Jun. 2020}
+  %   {Mastercard}{Pune, India}
+  %   \resumeItemListStart
+  %     \resumeItem{Simulated an end-to-end point-of-sale (POS) system for contactless card transactions using C and Arduino Wi-Fi modules, improving prototype testing speed and accuracy.}
+  %   \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Fault-Tolerant Quadrupedal Locomotion with Flow Matching} $|$ \emph{PyTorch, RL, Robotics}}{}
+    \resumeItemListStart
+      \resumeItem{Integrated fault-tolerant control mechanisms with flow-matching algorithms for robust quadrupedal locomotion under actuator and sensor failures, building on DreamFLEX's fault-aware controller and DreamWaQ's terrain imagination capabilities.}
+      \resumeItem{Optimized trajectory generation for enhanced stability and energy efficiency using differentiable simulation and policy optimization.}
+    \resumeItemListEnd
+
+%   \resumeProjectHeading
+%     {\textbf{Visual Whole-Body Control: Isaac Gym to Genesis Port} $|$ \emph{PyTorch, Isaac Gym, Genesis}}{}
+%     \resumeItemListStart
+%       \resumeItem{Ported the Visual Whole-Body loco-manipulation framework from Isaac Gym to Genesis; implemented configuration management and optimized locomotion and manipulation policies using PyTorch and JIT compilation for improved training throughput.}
+%     \resumeItemListEnd
+
+%   \resumeProjectHeading
+%     {\textbf{BioNLP Model Alignment using DeepSeek-RL} $|$ \emph{PyTorch, LLMs, RLHF}}{}
+%     \resumeItemListStart
+%       \resumeItem{Aligned large language models (Qwen, LLaMA) using DeepSeek-RL for biomedical NLP tasks.}
+%       \resumeItem{Achieved 85\% accuracy with RLHF and 60\% accuracy with supervised fine-tuning on clinical datasets.}
+%     \resumeItemListEnd
+
+%   \resumeProjectHeading
+%     {\textbf{Hierarchical Context Aggregation for Medical Notes} $|$ \emph{Python, NLP}}{}
+%     \resumeItemListStart
+%       \resumeItem{Implemented spoken language normalization achieving 90\% accuracy in medical terminology grounding.}
+%       \resumeItem{Developed key-phrase extraction and topic categorization algorithms for SOAP note generation.}
+%     \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Patrol Bot – Autonomous Security Robot} $|$ \emph{ROS, OpenCV, C++}}{}
+    \resumeItemListStart
+      \resumeItem{Developed an autonomous patrol robot using ROS and OpenCV for real-time person detection, obstacle avoidance, and color-coded status feedback; validated through real-world indoor testing.}
+    \resumeItemListEnd
+
+%   \resumeProjectHeading
+%     {\textbf{RL Algorithms for Mini-Games} $|$ \emph{Python, RL}}{}
+%     \resumeItemListStart
+%       \resumeItem{Implemented and analyzed MCTS, REINFORCE with baseline, and actor-critic algorithms across multiple environments including Grid World, Acrobot, Cat vs Monsters, and Cliff Walking.}
+%       \resumeItem{Optimized decision-making strategies and policy learning in stochastic domains, comparing convergence speed and sample efficiency.}
+%     \resumeItemListEnd
+
+%   \resumeProjectHeading
+%     {\textbf{SemEval 2021 Task 8 – MeasEval} $|$ \emph{PyTorch, RoBERTa, NLP}}{}
+%     \resumeItemListStart
+%       \resumeItem{Participated in SemEval 2021 Task 8 (MeasEval Counts and Measurement) focusing on semantic extraction between measured entities and measured quantities.}
+%       \resumeItem{Used RoBERTa-large and CRF models in PyTorch to reach an F1-score of 0.54.}
+%     \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Advanced Robot Navigation and Localization} $|$ \emph{Python, Robotics}}{}
+    \resumeItemListStart
+      \resumeItem{Built a particle filter for robot localization (0.5m accuracy) and implemented Q-learning and SARSA for autonomous wall-following, achieving 100\% success rate across complex scenarios.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------HONORS & AWARDS-----------
+\section{Honors \& Awards}
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{IIT Kharagpur -- JEE Advanced} (2017): Admitted through one of India's most competitive engineering examinations, with acceptance among the top 0.1\% of over 1.2 million applicants nationwide.}
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

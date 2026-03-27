@@ -98,7 +98,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[noitemsep, topsep=0pt, parsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -123,7 +123,7 @@
 
 %-----------SUMMARY-----------
 \begin{center}
-  \small{MS CS candidate at UMass Amherst with 3 years of industry SWE experience at Mastercard and active research in robotics and NLP. Focused on reinforcement learning for locomotion, continual learning, and large language model alignment.}
+  \small{MS CS candidate at UMass Amherst with hands-on research in deep learning, NLP, and reinforcement learning. Experienced in fine-tuning LLMs (Qwen, LLaMA) with RLHF, training RL policies for robotics, and building end-to-end ML pipelines using PyTorch, HuggingFace, and Python. 3 years of industry experience at Mastercard deploying production-grade systems.}
 \end{center}
 
 %-----------EDUCATION-----------
@@ -142,10 +142,10 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-    \textbf{Languages}{: Python, Java, C, C++, C\#, JavaScript, SQL} \\
-    \textbf{Frameworks / Libraries}{: PyTorch, TensorFlow, .NET Core, ASP.NET, Next.js, JUnit} \\
-    \textbf{Tools / Platforms}{: ROS, Sim2Real, Isaac Gym, Isaac Sim, Genesis, Mujoco, Linux, Jenkins, Docker, Google Cloud Platform (GCP), Oracle SQL Manager, Git, Jupyter, IntelliJ, Visual Studio, Android Studio} \\
-    \textbf{Certifications}{: DeepLearning.AI ML Specialization, DL Specialization, NLP Specialization}
+    \textbf{Languages}{: Python, Java, C, C++, SQL} \\
+    \textbf{Frameworks / Libraries}{: PyTorch, TensorFlow, HuggingFace, Scikit-learn, NumPy, Pandas, OpenCV, CUDA} \\
+    \textbf{Tools / Platforms}{: ROS, Isaac Gym, Isaac Sim, Genesis, MuJoCo, Weights \& Biases (W\&B), Docker, Google Cloud Platform (GCP), Git, Jupyter, Linux} \\
+    \textbf{Certifications}{: DeepLearning.AI: ML Specialization, DL Specialization, NLP Specialization}
   }}
 \end{itemize}
 
@@ -155,18 +155,16 @@
 \resumeSubHeadingListStart
 
   \resumeSubheading
-    {Graduate Student Researcher, Human-Centric Robotics Lab}{May 2025 -- Present}
+    {Graduate Research Assistant, Human-Centric Robotics Lab}{May 2025 -- Present}
     {University of Massachusetts Amherst}{Amherst, MA}
     \resumeItemListStart
       \resumeItem{Developing a continual learning framework for quadruped locomotion using Kolmogorov--Arnold Networks (KANs) with B-spline edge representations, enabling localized task updates that prevent global interference in MLP policies.}
       \resumeItem{Implemented BeamDojo extensions for humanoid locomotion, developing reinforcement learning algorithms for balance and control on sparse footholds.}
-    %   \resumeItem{Researching fault-tolerant quadrupedal locomotion by integrating DreamFLEX's fault-aware control with trajectory optimization and flow-matching algorithms to enhance recovery and adaptability.}
       \resumeItem{Ported the Visual Whole-Body Control framework from Isaac Gym to Genesis, unlocking advanced loco-manipulation and physics-based motion planning in a more efficient differentiable simulation environment.}
-    %   \resumeItem{Investigating human-robot interaction and multi-robot collaboration frameworks to improve autonomy, coordination, and task adaptability in unstructured environments.}
     \resumeItemListEnd
 
   \resumeSubheading
-    {Graduate Student Researcher, Biomedical NLP Lab}{Feb. 2025 -- May 2025}
+    {Graduate Research Assistant, Biomedical NLP Lab}{Feb. 2025 -- May 2025}
     {University of Massachusetts Amherst}{Amherst, MA}
     \resumeItemListStart
       \resumeItem{Fine-tuned large language models (Qwen, LLaMA) using DeepSeek-RL and reinforcement learning with human feedback (RLHF) for biomedical text understanding, achieving 85\% accuracy on clinical datasets.}
@@ -174,18 +172,27 @@
       \resumeItem{Enhanced model interpretability and domain-specific reasoning through reinforcement alignment and reward optimization techniques.}
     \resumeItemListEnd
 
+  % \resumeSubheading
+  %   {Graduate Research Assistant (Part-time)}{Feb. 2025 -- Present}
+  %   {University of Massachusetts Amherst}{Amherst, MA}
+  %   \resumeItemListStart
+  %     \resumeItem{Developing a continual learning framework for quadruped locomotion using Kolmogorov--Arnold Networks (KANs) with B-spline edge representations, enabling localized task updates that prevent global interference in MLP policies.}
+  %     \resumeItem{Implemented BeamDojo extensions for humanoid locomotion, developing reinforcement learning algorithms for balance and control on sparse footholds.}
+  %     \resumeItem{Ported the Visual Whole-Body Control framework from Isaac Gym to Genesis, unlocking advanced loco-manipulation and physics-based motion planning in a more efficient differentiable simulation environment.}
+  %     \resumeItem{Fine-tuned large language models (Qwen, LLaMA) using DeepSeek-RL and RLHF for biomedical text understanding, achieving 85\% accuracy on clinical datasets; benchmarked across MIMIC-EXT-IV and RARE datasets for domain generalization.}
+  %     \resumeItem{Enhanced model interpretability and domain-specific reasoning through reinforcement alignment and reward optimization techniques.}
+  %   \resumeItemListEnd
+
   \resumeSubheading
     {Software Engineer}{Jul. 2021 -- Jul. 2024}
     {Mastercard}{Pune, India}
     \resumeItemListStart
-      \resumeItem{Contributed to the Enhanced Currency Conversion (ECC) system by developing secure REST APIs and ASP.NET web services to streamline international transaction processing.}
-      \resumeItem{Engineered compliance-ready features for PCI key block mandates (CAVV, HMAC), strengthening cryptographic integrity and data protection.}
-      \resumeItem{Led modernization of gateway services from Java 8 to Zulu 17, resolving build pipeline issues on Jenkins and mitigating production vulnerabilities in tokenization microservices.}
-      \resumeItem{Mentored interns on automated environmental stability reports for Mastercard Local Processing Services, reducing manual monitoring overhead by 25\% through automated alerting and report generation.}
+      \resumeItem{Developed secure REST APIs and backend services for the Enhanced Currency Conversion (ECC) system, processing high-volume international transactions at scale.}
+      \resumeItem{Mentored interns on automated environmental stability reports, reducing manual monitoring overhead by 25\% through automated alerting and report generation.}
     \resumeItemListEnd
 
   \resumeSubheading
-    {Summer Research Fellow, NLP Lab}{Mar. 2021 -- Jun. 2021}
+    {Undergraduate Research Assistant, NLP Lab}{Mar. 2021 -- Jun. 2021}
     {IIT Kharagpur}{Kharagpur, India}
     \resumeItemListStart
       \resumeItem{Developed legal judgment classification systems using BiLSTM-BERT hybrid models, automating case categorization from Indian and UK Supreme Court datasets.}
@@ -193,28 +200,21 @@
     \resumeItemListEnd
 
   \resumeSubheading
-    {Summer Research Fellow, SWAN Laboratory}{Jun. 2020 -- Jan. 2021}
+    {Undergraduate Research Assistant, SWAN Laboratory}{Jun. 2020 -- Jan. 2021}
     {IIT Kharagpur}{Kharagpur, India}
     \resumeItemListStart
-      \resumeItem{Designed an IoT-enabled healthcare prediction system integrating dense neural networks to compute patient criticality scores, improving emergency triage accuracy by 40\%.}
+      \resumeItem{Designed an IoT-enabled healthcare prediction system integrating dense neural networks to compute patient criticality scores, supporting urgency-aware clinical triage decisions.}
       \resumeItem{Built a hospital recommender engine using KNN and cosine similarity, deployed on Google Cloud, providing real-time facility recommendations within a 5km radius.}
       \resumeItem{Automated real-time hospital data updates via Google Maps API and web scraping, ensuring hourly synchronization and high data reliability.}
     \resumeItemListEnd
 
-  \resumeSubheading
-    {Software Engineer Intern}{May 2020 -- Jun. 2020}
-    {Mastercard}{Pune, India}
-    \resumeItemListStart
-      \resumeItem{Simulated an end-to-end point-of-sale (POS) system for contactless card transactions using C and Arduino Wi-Fi modules, improving prototype testing speed and accuracy.}
-    \resumeItemListEnd
+  % \resumeSubheading
+  %   {Software Engineer Intern}{May 2020 -- Jun. 2020}
+  %   {Mastercard}{Pune, India}
+  %   \resumeItemListStart
+  %     \resumeItem{Simulated an end-to-end point-of-sale (POS) system for contactless card transactions using C and Arduino Wi-Fi modules, improving prototype testing speed and accuracy.}
+  %   \resumeItemListEnd
 
-\resumeSubHeadingListEnd
-
-
-%-----------HONORS & AWARDS-----------
-\section{Honors \& Awards}
-\resumeSubHeadingListStart
-  \resumeItem{\textbf{IIT Kharagpur -- JEE Advanced} (2017): Admitted through one of India's most competitive engineering examinations, with acceptance among the top 0.1\% of over 1.2 million applicants nationwide.}
 \resumeSubHeadingListEnd
 
 
@@ -238,10 +238,10 @@
 %     \resumeItemListEnd
 
 %   \resumeProjectHeading
-%     {\textbf{BioNLP Model Alignment using DeepSeek-RL} $|$ \emph{PyTorch, LLMs, RLHF}}{}
+%     {\textbf{BioNLP Model Alignment using DeepSeek-RL} $|$ \emph{PyTorch, LLMs, RLHF, HuggingFace}}{}
 %     \resumeItemListStart
-%       \resumeItem{Aligned large language models (Qwen, LLaMA) using DeepSeek-RL for biomedical NLP tasks.}
-%       \resumeItem{Achieved 85\% accuracy with RLHF and 60\% accuracy with supervised fine-tuning on clinical datasets.}
+%       \resumeItem{Aligned large language models (Qwen, LLaMA) using DeepSeek-RL for biomedical NLP tasks, achieving 85\% accuracy with RLHF versus 60\% with supervised fine-tuning on clinical datasets.}
+%       \resumeItem{Benchmarked domain generalization across MIMIC-EXT-IV and RARE datasets, evaluating robustness through reinforcement alignment and reward optimization.}
 %     \resumeItemListEnd
 
   \resumeProjectHeading
@@ -251,12 +251,12 @@
       \resumeItem{Developed key-phrase extraction and topic categorization algorithms for SOAP note generation.}
     \resumeItemListEnd
 
-  \resumeProjectHeading
-    {\textbf{Patrol Bot – Autonomous Security Robot} $|$ \emph{ROS, OpenCV, C++}}{}
-    \resumeItemListStart
-      \resumeItem{Developed an autonomous patrol robot integrating OpenCV-based vision for person detection and obstacle avoidance.}
-      \resumeItem{Implemented a color-coded feedback system and conducted real-world testing in indoor environments.}
-    \resumeItemListEnd
+%   \resumeProjectHeading
+%     {\textbf{Patrol Bot – Autonomous Security Robot} $|$ \emph{ROS, OpenCV, C++}}{}
+%     \resumeItemListStart
+%       \resumeItem{Developed an autonomous patrol robot integrating OpenCV-based vision for person detection and obstacle avoidance.}
+%       \resumeItem{Implemented a color-coded feedback system and conducted real-world testing in indoor environments.}
+%     \resumeItemListEnd
 
 %   \resumeProjectHeading
 %     {\textbf{RL Algorithms for Mini-Games} $|$ \emph{Python, RL}}{}
@@ -272,13 +272,20 @@
       \resumeItem{Used RoBERTa-large and CRF models in PyTorch to reach an F1-score of 0.54.}
     \resumeItemListEnd
 
-  \resumeProjectHeading
-    {\textbf{Advanced Robot Navigation and Localization} $|$ \emph{Python, Robotics}}{}
-    \resumeItemListStart
-      \resumeItem{Developed a particle filter algorithm for robot localization achieving 0.5m position accuracy.}
-      \resumeItem{Implemented and compared Q-learning and SARSA algorithms for autonomous robot wall-following with 100\% success rate in complex scenarios.}
-    \resumeItemListEnd
+%   \resumeProjectHeading
+%     {\textbf{Advanced Robot Navigation and Localization} $|$ \emph{Python, Robotics}}{}
+%     \resumeItemListStart
+%       \resumeItem{Developed a particle filter algorithm for robot localization achieving 0.5m position accuracy.}
+%       \resumeItem{Implemented and compared Q-learning and SARSA algorithms for autonomous robot wall-following with 100\% success rate in complex scenarios.}
+%     \resumeItemListEnd
 
+\resumeSubHeadingListEnd
+
+
+%-----------HONORS & AWARDS-----------
+\section{Honors \& Awards}
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{IIT Kharagpur -- JEE Advanced} (2017): Admitted through one of India's most competitive engineering examinations, with acceptance among the top 0.1\% of over 1.2 million applicants nationwide.}
 \resumeSubHeadingListEnd
 
 
